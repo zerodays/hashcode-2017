@@ -42,7 +42,7 @@ server_space = [X for i in range(C)]
 
 mama = 0
 while True:
-    if mama % 10 == 0: print(len(neki))
+    if mama % 100 == 0: print(len(neki))
     mama += 1
     neki.sort(key=endpoint_score)
     while len(neki) > 0 and len(requests[neki[0]]) == 0:
