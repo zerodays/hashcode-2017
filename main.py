@@ -40,10 +40,7 @@ server_space = [X for i in range(C)]
 
 # print(requests)
 
-mama = 0
 while True:
-    if mama % 100 == 0: print(len(neki))
-    mama += 1
     neki.sort(key=endpoint_score)
     while len(neki) > 0 and len(requests[neki[0]]) == 0:
         # print(asdf, asdf[0], neki)
@@ -78,4 +75,4 @@ while True:
 su = sum([bool(i) for i in servers])
 print(su)
 for i, _ in enumerate(servers):
-    if _: print(i, ' '.join(map(str, _)))
+    if _: print(i, ' '.join(map(str, set(_))))
